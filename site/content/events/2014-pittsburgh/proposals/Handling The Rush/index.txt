@@ -1,0 +1,20 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: true
+talk: true
+selected: true
+layout: event_pitt
+author: Brian Nuszkowski 
+title: "Handling The Rush"
+---
+
+**Abstract:**
+
+Congratulations! Your site has just gone big. Depending on how thorough you’ve been with load testing, you may or may not be celebrating this impending flood of user traffic. This talk will elaborate on the topic of load testing, which often receives limited coverage among performance and scaling discussions. I'll define what a load testing strategy should look like and elaborate on several of its components.
+
+**Speaker:**
+Brian Nuszkowski 

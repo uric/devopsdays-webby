@@ -1,0 +1,64 @@
+---
+extension: html
+filter:
+  - erb
+  - markdown
+title: Welcome
+dirty: true
+layout: event_warsaw
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+<% @eventid = File.basename(@eventhome) %>
+
+<center>
+  <img border="0" src="logos/warsaw.png" alt="DevOpsDays Warsaw">
+</center>
+<center>
+  <br/>
+  This year for the very first time a DevOpsDays will be held in <a href="https://www.youtube.com/watch?v=Qbu_FRg8vuU">Poland</a>.
+  We are extremely excited to host such renowned event in our country and invite everyone from Europe and outside to attend, participate, and perhaps become a speaker.
+  Join us to share the adventure!
+  <table>
+    <tr>
+      <td></td>
+    </tr>
+    <tr>
+      <td><b>Date</b></td>
+      <td><%= render(:partial => "/#{@eventhome}/_target_date") -%></td>
+    </tr>
+    <tr>
+      <td><b>Location</b></td>
+      <td>
+        <a href="location/">
+          <a href="http://devopsdays.org/events/2014-warsaw/location/" target="_blank">Polish-Japanese Institute of Information Technology</a>
+      </td>
+    </tr>
+    <tr>
+    <td><b>Participants</b></td><td><b><a href="registration/">Register now!</a></b></td></tr>
+    <tr>
+      <td><b>Speakers</b></td>
+      <td>Call for <a href="propose/">proposals</a> is now closed. Thank you all for submissions!</td>
+    </tr>
+    <tr>
+      <td><b>Program</b></td>
+      <td>Check our current <a href="program/">program</a>, it's ready!</td>
+    </tr>
+    <tr>
+      <td><b>Partners</b></td>
+      <td><a href="partners/">Partnership opportunities</a> are still available. Help us make this event an outstanding one!</td>
+    </tr>
+    <tr>
+      <td><b>Contact</b></td>
+      <td><a href="contact/">Get in touch with the Organisers</a>.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><a href="https://twitter.com/devopsdayswaw" class="twitter-follow-button" data-show-count="false">Follow @devopsdayswaw</a>
+      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </td>
+    </tr>
+  </table>
+</center>
+<center>
+  <a href="http://groups.google.com/group/devopsdays">Subscribe to the DevOpsDays mailing list</a>
+</center>

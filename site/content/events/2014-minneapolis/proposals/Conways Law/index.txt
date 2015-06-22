@@ -1,0 +1,43 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: true
+talk: true
+selected: true
+layout: event_msp
+author: Dan Slimmon
+title: "Conway's Law: The Skeleton Of Devops"
+---
+
+**Abstract:**
+
+Devops is about communication. In order to make better software, we seek out diverse viewpoints, use a common vocabulary, and encourage transparency.    
+
+But despite all this focus on communication, we don't have much of a framework to guide our decisions.                                               
+
+"Should we do continuous integration?"
+
+"Why not? People seem to like that." 
+
+"What about ChatOps?"
+
+"Sure, yeah; it works for GitHub."
+
+Well, there's a half-forgotten rule -- first stated 46 years ago -- that can guide us through these decisions. It's called Conway's Law:
+
+Organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations.
+
+I'll show how Conway's Law is derived, how it's been empirically tested, and how it informs so much of what we do in devops. I want my audience to walk away with a new tool for spreading devops, shaping cross-team communication, and moving forward with confidence. 
+
+**Speaker:**
+Dan Slimmon
+
+**Slides:**
+<iframe src="https://docs.google.com/presentation/embed?id=1IWerrBccPJ1ZPmF7yncwr52dc2MAwS_hCDGoGxYmwvw&amp;start=false&amp;loop=false&amp; frameborder="0" width="520" height="405"></iframe>
+
+**Video:**
+
+<iframe src="//player.vimeo.com/video/101220166" width="500" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/101220166">DevOpsDays Minneapolis 2014 -- Dan Slimmon, Conway's Law: the Skeleton of DevOps</a> from <a href="http://vimeo.com/devopsdays">devopsdays</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

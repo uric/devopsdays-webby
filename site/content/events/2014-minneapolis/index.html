@@ -1,0 +1,42 @@
+---
+extension: html
+layout: event_msp
+filter:
+- erb
+- markdown
+title: welcome
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+<center>
+  <table><tr><td>
+        <center>
+        <img border=0 width="160" height="240" src="./logo2014.png">
+</td><td valign=top>
+<strong>DevOpsDays is coming to Minneapolis! </strong>
+<br><br>
+Dates: July 17-18, 2014
+<br><br>
+Location: <a href="./location">Downtown Minneapolis, University of St. Thomas</a>
+<br><br>
+
+<b>New!</b> - Open Spaces Schedule: <a href="http://bit.ly/dodmsp-openspaces">http://bit.ly/dodmsp-openspaces</a>
+<br><br>
+
+<a href="./registration">Register now</a>!
+<br><br>
+
+<a href="./program">View the program</a>!
+<br><br>
+
+<a href="./sponsor">Sponsor the event</a>! It's a great way to promote your organization.
+<br><br>
+
+<a href="mailto:<%= render(:partial => "/#{@eventhome}/_email_organizers") %>">Email the organizers</a>
+<br><br>
+</td>
+</tr>
+</table>
+</center>
+
+<hr>

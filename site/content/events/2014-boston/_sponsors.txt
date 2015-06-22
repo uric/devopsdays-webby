@@ -1,0 +1,72 @@
+---
+filter:    erb
+---
+<%
+def make_sponsor_links(sponsors)
+  sponsors.map do |sponsor|
+    "<a href='#{sponsor[:link]}'><img border=0 alt='#{sponsor[:name]}' title='#{sponsor[:name]}' width=100px height=100px src='#{File.join('/',@eventhome,"logos/#{sponsor[:image]}")}'></a>"
+  end.join("\n")
+end
+%>
+
+<% @gsponsors = [
+{ :image => "sumologic.png", :name => "Sumo Logic", :link => "http://www.sumologic.com/"},
+{ :image => "ruxit.png", :name => "ruxit", :link => "http://www.ruxit.com/"},
+{ :image => "appneta.png", :name => "AppNeta", :link => "http://www.appneta.com/"},
+{ :image => "activestate.png", :name => "Active State", :link => "http://www.activestate.com"},
+{ :image => "datadog.png", :name => "Datadog", :link => "https://www.datadoghq.com/product/"},
+{ :image => "logentries.png", :name => "logentries", :link => "http://logentries.com"},
+{ :image => "xebialabs.png", :name => "XebiaLabs", :link => "http://www.xebialabs.com"},
+{ :image => "redhat.png", :name => "Red Hat", :link => "http://www.redhat.com"},
+{ :image => "puppetlabs.png", :name => "Puppet Labs", :link => "http://www.puppetlabs.com"},
+{ :image => "chef.png", :name => "Chef", :link => "http://www.getchef.com"},
+{ :image => "smartbear.png", :name => "Smart Bear", :link => "http://www.smartbear.com"},
+]%>
+
+<% if @gsponsors.empty?  %>
+<i>&nbsp;&nbsp;&nbsp;<a href='<%= File.join('/',@eventhome,'/sponsor') -%>'>Be the first to sponsor!</a></i>
+<% end %>
+
+<% @gsponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
+<% @ssponsors = [
+{ :image => "acquia.png", :name => "Acquia", :link => 'https://www.acquia.com/careers/open-positions'},
+{ :image => "vmware.png", :name => "VMware", :link => 'http://www.vmware.com/'},
+{ :image => "victorops.png", :name => "VictorOps", :link => 'http://victorops.com//'},
+]%>
+
+<% unless @ssponsors.empty?  %><h1>Silver sponsors</h1><% end %>
+
+<% @ssponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
+<% @bsponsors = [
+{ :image => "mathworks.png", :name => "MathWorks", :link => 'http://www.mathworks.com/company/jobs/opportunities/search?keywords=DevOps&location[]=US&q=?source=8862'},
+{ :image => "zanthos.png", :name => "zanthos", :link => 'http://www.zanthos.com'},
+{ :image => "winterwyman.png", :name => "Winter Wyman", :link => 'http://winterwyman.com/'},
+]%>
+
+<% unless @bsponsors.empty?  %><h1>Bronze sponsors</h1><% end %>
+
+<% @bsponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
+<% @msponsors = [
+{ :image => "oreilly.png", :name => "O'Reilly", :link => 'http://oreilly.com//'},
+]%>
+<% unless @msponsors.empty?  %><h1>Media sponsors</h1><% end %>
+<% @msponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
+<br/>
+<br/>
+<h1>Host sponsor</h1>
+<% @hsponsors = [
+{ :image => "microsoft.png", :name => "Microsoft", :link => "http://www.microsoft.com"},
+]%>
+<%= make_sponsor_links(@hsponsors) %>

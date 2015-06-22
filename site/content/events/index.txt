@@ -4,30 +4,31 @@ filter:
 - erb
 - markdown
 title: Devopsdays Events
+sidebar: false
 ---
-The following events took place in the past:
 
-<ul>
-<li><a href="/events/2013-amsterdam/">Amsterdam 2013</a></li>
-<li><a href="/events/2013-mountainview/">Mountainview 2013</a></li>
-<li><a href="/events/2013-paris/">Paris 2013</a></li>
-<li><a href="/events/2013-berlin/">Berlin 2013</a></li>
-<li><a href="/events/2013-london/">London 2013</a></li>
-<li><a href="/events/2012-newyork/">New York 2012</a></li>
-<li><a href="/events/2012-italy/">Rome 2012</a></li>
-<li><a href="/events/2012-mountainview/">Mountain View 2012</a></li>
-<li><a href="/events/2012-india/">India 2012</a></li>
-<li><a href="/events/2012-tokyo/">Tokyo 2012</a></li>
-<li><a href="/events/2012-austin/">Austin 2012</a></li>
-<li><a href="/events/2011-goteborg/">Goteborg 2011</a></li>
-<li><a href="/events/2011-bangalore/">Bangalore 2011</a></li>
-<li><a href="http://devopsdownunder.org/">Melbourne 2011</a></li>
-<li><a href="/events/2011-mountainview/">Mountain View 2011</a></li>
-<li><a href="/events/2011-boston/">Boston 2011</a></li>
-<li><a href="/events/2011-goteborg/">Göteborg 2011</a></li>
-<li><a href="/events/2010-brazil/">Sao Paulo 2010</a></li>
-<li><a href="/events/2010-europe/">Hamburg 2010</a></li>
-<li><a href="/events/2010-us/">Mountain View 2010</a></li>
-<li><a href="/events/2010-sydney/">Sydney 2010</a></li>
-<li><a href="/events/2009-ghent/">Ghent 2009</a></li>
-</ul>
+<div><h3>Learn how to <a href="/pages/organizing">organize your own devopsdays event</a>!</h3></div>
+
+<div class="span-5 ">
+  <div style=" padding-top:18px;" class="span-4 last">
+    <h1>Upcoming </h1>
+  </div>
+
+  <div class="span-5 ">
+    <%= render(:partial => '/future') %>
+  </div>
+</div>
+
+<div class="span-18 last ">
+  <div style=" padding-top:18px;" class="span-8 last">
+    <h1>Past</h1>
+  </div>
+
+  <div class="span-18 last ">
+    <%= render(:partial => '/past') %>
+  </div>
+</div>
+</div>
+
+<div><h3>The <a href="/events/calendar">DevOps Calendar</a> lists DevOps conferences & events, both devopsdays and other.</h3></div>
+

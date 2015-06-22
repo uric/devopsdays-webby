@@ -1,0 +1,38 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: true
+talk: true
+selected: false
+layout: event
+author: James Fryman
+title: "Getting Started with ChatOps"
+---
+
+**Abstract**
+
+ChatOps is a relatively new concept coined by GitHub, in where daily
+operations are orchestrated in plain sight in the same chat room used
+to communicate with team members. The implementation of ChatOps is as
+much a cultural change as it is a technological one. This concept
+often brings up many concerns - are all my users trusted to use
+ChatOps? Should they be? How can I train them? Etc. This talk is a
+practical discussion expanding on the ChatOps concept - how do you get
+started, how should you prepare, etc.
+
+**Speaker**
+
+James Fryman is an Information Technologist who builds, designs,
+curates, and evangelizes automation in all layers of the IT
+stack. Over the last decade, James has held roles in Information
+Technology that includes the domains of Information Security, Service
+Delivery, IT Operations, Development, and IT Management. He has
+learned through these experiences the importance of automation in all
+facets of Information Technology to accelerate delivery, reduce human
+errors throughout an application lifecycle. Currently, James works at
+GitHub assisting in the development and curation of systems scaling
+within the Operations group. He is also a frequent speaker on the
+topic of automation at conferences throughout the world.

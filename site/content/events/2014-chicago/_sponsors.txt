@@ -1,0 +1,79 @@
+---
+filter:    erb
+---
+
+<%
+def make_sponsor_links(sponsors)
+  sponsors.map do |sponsor|
+    "<a href='#{sponsor[:link]}'><img alt='#{sponsor[:name]}' title='#{sponsor[:name]}' width='100' height='100' src='#{File.join('/',@eventhome,"logos/#{sponsor[:image]}")}'></a>"
+  end.join("\n")
+end
+%>
+
+<% @gsponsors = [
+{ :image => "signal-100x100.png", :name => "Signal", :link => "http://www.signal.co/"},
+{ :image => "datadog-100x100.png", :name => "Datadog", :link => "http://www.datadoghq.com"},
+{ :image => "cloudbees-100x100.png", :name => "CloudBees", :link => "http://www.cloudbees.com"},
+{ :image => "scriptrock-100x100.png", :name => "ScriptRock", :link => "http://scriptrock.com"},
+{ :image => "chef-100x100.png", :name => "CHEF", :link => "http://www.getchef.com"},
+{ :image => "rackspace-100x100.png", :name => "Rackspace", :link => "http://www.rackspace.com/"},
+{ :image => "xebialabs-100x100.png", :name => "XebiaLabs", :link => "http://xebialabs.com/"},
+{ :image => "elasticsearch-100x100.png", :name => "Elasticsearch", :link => "http://www.elasticsearch.org/"},
+{ :image => "microsoft-100x100.png", :name => "Microsoft", :link => "http://www.microsoft.com/"},
+{ :image => "orbitz-100x100.png", :name => "Orbitz", :link => "http://www.orbitz.com/"},
+{ :image => "circonus-100x100.png", :name => "Circonus", :link => "http://www.circonus.com/"}
+]%>
+<%= make_sponsor_links(@gsponsors) %>
+<br />
+<% if @gsponsors.size < 11 %>Become a <a href="/<%= @eventhome %>/sponsor/#sponsorship">Gold Sponsor!</a><% end %>
+
+<br/>
+<br/>
+<h1>Silver sponsors</h1>
+
+<% @ssponsors = [
+{ :image => "drw-100x100.png", :name => "DRW Trading", :link => "http://drw.com/"},
+{ :image => "victorops-100x100.png", :name => "VictorOps", :link => "http://victorops.com/"},
+{ :image => "servercentral-100x100.png", :name => "ServerCentral", :link => "http://servercentral.com/"},
+{ :image => "puppetlabs-100x100.png", :name => "Puppet Labs", :link => "http://puppetlabs.com/"},
+{ :image => "enova-100x100.png", :name => "Enova", :link => "http://www.enova.com/"},
+{ :image => "10thmagnitude-100x100.png", :name => "10th Magnitude", :link => "http://www.10thmagnitude.com/"}
+] %>
+<%= make_sponsor_links(@ssponsors) %>
+<br />
+<% if @ssponsors.size < 6 %>Become a <a href="/<%= @eventhome %>/sponsor/#sponsorship">Silver Sponsor!</a><% end %>
+
+<br/>
+<br/>
+<h1>Bronze sponsors</h1>
+
+<% @bsponsors = [
+{ :image => "opinionlab-100x100.png", :name => "Opinion Lab", :link => "http://www.opinionlab.com"}
+] %>
+<%= make_sponsor_links(@bsponsors) %>
+<br />
+<% if @bsponsors.size < 1 %>Become a <a href="/<%= @eventhome %>/sponsor/#sponsorship">Bronze Sponsor!</a><% end %>
+
+<br/>
+<br/>
+<h1>Media sponsors</h1>
+<% @msponsors = [
+{ :image => "oreilly-100x100.png", :name => "O&#39;Reilly Media", :link => "http://oreilly.com/"},
+{ :image => "ado-100x100.png", :name => "Arrested DevOps", :link => "http://arresteddevops.com/"},
+{ :image => "ffs-100x100.png", :name => "Food Fight Show", :link => "http://foodfightshow.org/"},
+{ :image => "tss-100x100.png", :name => "The Ship Show", :link => "http://theshipshow.com/"},
+{ :image => "bit-100x100.png", :name => "Blacks in Technology", :link => "http://www.blacksintechnology.net/"}
+] %>
+<%= make_sponsor_links(@msponsors) %>
+<br />
+<% if @msponsors.size < 3 %>Become a <a href="/<%= @eventhome %>/sponsor/#sponsorship">Media Sponsor!</a><% end %>
+
+<br/>
+<br/>
+<h1>Wifi sponsors</h1>
+<% @wsponsors = [
+{ :image => "cisco-100x100.png", :name => "Cisco Meraki", :link => "https://meraki.cisco.com/"},
+{ :image => "backstop-100x100.png", :name => "Backstop Solutions Group", :link => "https://www.backstopsolutions.com/"},
+] %>
+<%= make_sponsor_links(@wsponsors) %>
+<br />

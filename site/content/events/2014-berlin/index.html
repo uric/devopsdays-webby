@@ -1,0 +1,53 @@
+---
+extension: html
+layout: event
+filter:
+- erb
+- markdown
+title: Welcome
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+
+<center>
+  <table>
+    <tr>
+      <td>
+        <img src="berlin_logo.jpg" alt="berlin logo">
+      </td>
+      <td valign="top">
+        <table>
+          <tr>
+            <td colspan="2">
+              DevOpsDays is back in Berlin - and is sold out!<br/>
+              <big><strong><a href="program/">Find links to videos and slides embedded in the program.</a></strong> Alternative way to access the videos is via the <strong><a href="http://vimeo.com/album/3093746">Vimeo album</a></strong>.</big>
+
+            </td>
+          </tr>
+          <tr>
+            <td><b>Date</b></td>
+            <td><strong><%= render(:partial => "/#{@eventhome}/_target_date") -%></strong></td>
+          </tr>
+          <tr>
+            <td><b>Location</b></td>
+            <td>
+              <a href="location/">Kalkscheune, Berlin Mitte</a>
+            </td>
+          </tr>
+          <tr>
+            <td><b>Contact</b></td>
+            <td><a href="contact/">Get in touch with the Organizers</a></td>
+          </tr>
+          <tr>
+            <td><b>Sponsor</b></td>
+            <td><a href="./sponsor">Thank you sponsors for making this possible! Sponsorship is closed.</a></td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  <img src="tear_down_wall.jpg" alt="Mr. #devops, tear down this wall!" title="Photo by Hunter Desportes: www.flickr.com/photos/hdport">
+</center>
+<center>
+  <a href="http://groups.google.com/group/devopsdays">Subscribe to the DevOpsDays mailing list</a>
+</center>

@@ -1,0 +1,18 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: true
+talk: true
+selected: false
+layout: event
+author: Proposal 5
+title: "Rocking Out To Chef Metal"
+---
+
+**Abstract**
+
+Chef recently announced Chef Metal, a framework for managing clusters of machines in the same way you traditionally managed single nodes: with version-controlled recipes. Join us as we walk through how Rackspace uses Chef Metal and provisioners in a live demo deployment on an OpenStack cloud.
+

@@ -4,8 +4,10 @@ created_at: 2012-08-14 17:11:09.082858 +02:00
 filter:     
 - erb
 - markdown
-dirty:      true
-layout: event
+dirty: true
+layout: event_tokyo
+bento: true
+title: 
 ---
 <% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
 <% parent="/#{@eventhome}/proposals" %>

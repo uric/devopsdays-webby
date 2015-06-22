@@ -1,0 +1,30 @@
+---
+extension: html
+layout: event
+filter:
+- erb
+- markdown
+title: welcome
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+
+![Ljubljana](/<%= @eventhome -%>/images/lj.jpg)
+
+##<%= render(:partial => "/#{@eventhome}/_target_date") -%>
+
+*This event will be in English*
+
+## Program
+
+The final program <a href="/events/2015-ljubljana/program">has been published</a>! If you're new to DevopsDays, read up on the <a href="/pages/open-space-format">open space concept</a>!
+
+### Evening event
+We will be heading to Lepa Žoga for some free beer and delicious hot dogs!
+
+## Tickets
+[Buy your tickets now](/events/2015-ljubljana/registration/)
+
+### Contact
+
+You can reach us at <a href='mailto:<%= render(:partial => "/#{@eventhome}/_email_organizers") %>'><%= render(:partial => "/#{@eventhome}/_email_organizers") %></a>

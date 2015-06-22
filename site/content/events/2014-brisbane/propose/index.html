@@ -1,0 +1,18 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+sidebar: true
+layout: event
+title: Proposals
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+<% @eventid = File.basename(@eventhome) %>
+
+<center><img border=0 src="../logos/dodbne2014.png" alt="DevOps Days Brisbane"></center>
+
+<hr>
+
+CFP is closed (see the <a href="../program/">program</a>)

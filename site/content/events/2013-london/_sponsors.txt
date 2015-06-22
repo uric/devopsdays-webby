@@ -3,12 +3,8 @@ filter:    erb
 ---
 <% @psponsors = [
 { :image => "bmc.png", :name => "BMC", :link => "http://www.bmc.com/"},
-{ :image => "opscode.png", :name => "Opscode", :link => "http://opscode.com/"},
-{ :image => "datadog.png", :name => "Datadog HQ", :link => "http://www.datadoghq.com/"},
-{ :image => "urbancode.png", :name => "Urbancode", :link => "http://www.urbancode.com/"},
-{ :image => "zeroturnaround.png", :name => "Zeroturnaround", :link => "http://www.zeroturnaround.com/"},
-{ :image => "uc4.png", :name => "UC4", :link => "http://www.uc4.com/ara"},
-{ :image => "collabnet.png", :name => "Collabnet", :link => "http://www.collabnet.com/"},
+{ :image => "puppetlabs.png", :name => "Puppetlabs", :link => "http://www.puppetlabs.com/"},
+{ :image => "hp.png", :name => "HP", :link => "http://www.hp.com/"},
 ]%>
 
 <% @psponsors.shuffle.each do |sponsor| %>
@@ -16,11 +12,14 @@ filter:    erb
 <% end %>
 
 <% @gsponsors = [
-{ :image => "basho.png", :name => "Basho", :link => "http://www.basho.com/"},
-{ :image => "serena.png", :name => "Serena", :link => "http://www.serena.com/"},
-{ :image => "boundary.png", :name => "Boundary", :link => "http://www.boundary.com/"},
-{ :image => "google.png", :name => "Google", :link => "http://www.google.com/"},
-{ :image => "appdynamics.png", :name => "App Dynamics", :link => "http://www.appdynamics.com/"},
+{ :image => "xebialabs.png", :name => "Xebialabs", :link => "http://xebialabs.com/"},
+{ :image => "atalanta-systems.png", :name => "Atalanta Systems", :link => "http://atalanta-systems.com/"},
+{ :image => "appdynamics.png", :name => "AppDynamics", :link => "http://appdynamics.com/"},
+{ :image => "normation-cfengine.png", :name => "CFengine - Normation", :link => "http://normation.com/"},
+{ :image => "ca.png", :name => "CA Technologies", :link => "http://ca.com/"},
+{ :image => "cumulusnetworks.png", :name => "Cumulus Networks", :link => "http://cumulusnetworks.com/"},
+{ :image => "ibm.png", :name => "IBM", :link => "http://ibm.com/"},
+{ :image => "cisco.png", :name => "Cisco", :link => "http://cisco.com/"}
 ]%>
 
 <h1>Gold sponsors</h1>
@@ -33,11 +32,20 @@ filter:    erb
 <a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
 <% end %>
 
+<h1>Special sponsors</h1>
+<% @lsponsors = [
+{ :image => "kainos.png", :name => "Kainos", :link => "http://kainos.com/"}
+]%>
+
+<% @lsponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
 <% @ssponsors = [
-{ :image => "payback.png", :name => "Payback", :link => "http://www.payback.net/"},
-{ :image => "atalanta-systems.png", :name => "Atalanta Systems", :link => "http://atalanta-systems.com/"},
-{ :image => "enstratius.png", :name => "Enstratius", :link => "http://enstratius.com/"},
-{ :image => "serverdensity.png", :name => "Server Density", :link => "http://serverdensity.com/"},
+{ :image => "timgroup.png", :name => "Tim Group", :link => "http://timgroup.com/"},
+{ :image => "scalefactory.png", :name => "The Scale Factory", :link => "http://www.scalefactory.com/"},
+{ :image => "speerhead.png", :name => "Speerhead", :link => "http://www.speerhead.com/"},
+{ :image => "sonatype.png", :name => "Sonatype", :link => "http://www.sonatype.com/"}
 ]%>
 
 <% unless @ssponsors.empty?  %><h1>Silver sponsors</h1><% end %>

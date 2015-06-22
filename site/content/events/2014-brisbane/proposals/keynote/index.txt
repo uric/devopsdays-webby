@@ -1,0 +1,21 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: true
+talk: true
+selected: false
+layout: event
+author: Sidney Dekker
+title: "Keynote: System Failure, Human Error: Who's to Blame?"
+---
+
+**Keynote**
+
+We are delighted to have world-renowned speaker and author, Sidney Dekker, present this year's keynote address focusing on the history of our understanding of system failures and the assumed role of human error.
+
+**Speaker:**
+
+Sidney Dekker (PhD Ohio State University, USA, 1996) is professor at Griffith University in Brisbane, Australia, where he runs the Safety Science Innovation Lab. He is also Professor (Hon.) of psychology at The University of Queensland, and Professor (Hon.) of human factors and patient safety at Royal Children's Hospital in Brisbane. Previously, he was Professor of human factors and system safety at Lund University in Sweden. After becoming professor, he learned to fly the Boeing 737, working part-time as an airline pilot out of Copenhagen. He has won worldwide acclaim for his groundbreaking work in human factors and safety, and is best-selling author of, most recently, Second Victim (2013), Just Culture (2012), Drift into Failure (2011), and Patient Safety (2011). His latest book is Safety Differently (2014). More at sidneydekker.com

@@ -1,0 +1,79 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+layout: event_helsinki
+title: propose
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+<% @eventid = File.basename(@eventhome) %>
+<% parent="/#{@eventhome}/proposals" %>
+<hr>
+
+<h3>Selected proposals</h3>
+See <a href="../program/">program</a> for proposals that are already selected.
+
+<br>
+Ways of suggesting talks:
+<ol>
+  <li><strong><em>A proposal for a talk/panel</em></strong> during the conference part : these are 30 minute slots that will have all people's full attention as everybody will be in that one room.<br>
+  <a href="mailto:organizers-helsinki-2014@devopsdays.org?subject=Submit%20a%20talk%20for%20Devopsdays%20Finland&body=Title%0D%0A%0D%0AAbstract%0D%0A%0D%0ABio">Submit a talk</a> </li>
+  <li><strong><em>An Ignite talk</em></strong> that will be presented during the<a href="/pages/ignite-talks-format"> Ignite sessions</a>: these are 5 minutes slots with slides changing every 15 seconds (20 slides total) also presented to all attendees in one room<br>
+  <a href="mailto:organizers-helsinki-2014@devopsdays.org?Submit%20an%20ignite%20for%20Devopsdays%20Finland&body=Title%0D%0A%0D%0AAbstract%0D%0A%0D%0ABio">Submit an ignite</a>
+  </li>
+  <li><strong><em>Openspace session</em></strong> : even without a prepared presentation we welcome the discussion and interaction by having people propose a session on the fly during the openspace opening. Check the <a href="/pages/open-space-format">openspace format</a> for more information
+</ol>
+
+<h3>Speaker selection</h3>
+The selection is done by the [complete organization team](../contact) over a discussion. We take into account comments/remarks done at the bottom of each proposal. Once selection is done, we will notify both selected and non-selected speakers. Optionally we will tell people they are a runner up or ask them to propose the same subject as an Ignite talk.
+
+<h3>Suggest a speaker, topic</h3>
+Come on, don't be shy. We know you've always wanted a person to give their own view on a specific subject.
+Now's your chance and we might make it happen.
+<a href="mailto:organizers-helsinki-2014@devopsdays.org?Suggest%20a%20topic%20for%20Devopsdays%20Finland">Suggest a topic/speaker</a>
+
+<h3>Current proposals</h3>
+
+Here's list of suggestions that we have received so far. No final selection done yet.
+
+Suggested topics so far:
+<ol>
+<% suggestions = @pages.find(:all, :in_directory => parent, :recursive => true, :sort_by => "title", :reverse => true, :suggestion => true)
+  suggestions.each do |suggestion|
+-%>
+<li><%= link_to_page(suggestion) %> - suggested by <%= suggestion.author %>
+<% end -%>
+</ol>
+
+Day 1 talks so far:
+<ol>
+<% suggestions = @pages.find(:all, :in_directory => parent, :recursive => true, :sort_by => "title", :reverse => true, :talk_day1 => true)
+  suggestions.each do |suggestion|
+-%>
+<li><%= link_to_page(suggestion) %> - <%= suggestion.author %>
+<% end -%>
+</ol>
+
+Day 2 talks so far:
+<ol>
+<% suggestions = @pages.find(:all, :in_directory => parent, :recursive => true, :sort_by => "title", :reverse => true, :talk_day2 => true)
+  suggestions.each do |suggestion|
+-%>
+<li><%= link_to_page(suggestion) %> - <%= suggestion.author %>
+<% end -%>
+</ol>
+
+Ignites so far:
+<ol>
+<% suggestions = @pages.find(:all, :in_directory => parent, :recursive => true, :sort_by => "title", :reverse => true, :ignite => true)
+  suggestions.each do |suggestion|
+-%>
+<li><%= link_to_page(suggestion) %> - <%= suggestion.author %>
+<% end -%>
+</ol>
+
+<div class="span-15 first last">
+<%= render(:partial => '/disqus_comments') %>
+</div>

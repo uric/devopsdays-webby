@@ -1,0 +1,32 @@
+---
+extension: html
+layout: event
+filter:
+- erb
+- markdown
+title: welcome
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+<center>
+  <table><tr><td>
+  <img border=0 src="logo 215x193.png">
+</td><td>
+  <center><b>5th Anniversary DevOpsDays Silicon Valley!</b></center>
+  Date : <b>27 &amp; 28 of June 2014</b>
+  <br>
+  <br><center><b><font size="10">SOLD OUT</font></b></center><br>
+  <center><strong><a href="http://www.bmc.com/devops">LIVE STREAM</a></strong></center>
+  <br>
+  Location: <a href="location">Computer Museum Mountain View, CA</a>
+  <br><br>
+  <i>Registration is closed</i>
+  <br>
+  <i>Call for Presentations is Closed</i>
+</td>
+</tr>
+</table>
+</center>
+<hr>
+
+If you want to be the first to get news [subscribe to the devopsdays mailinglist](http://groups.google.com/group/devopsdays)

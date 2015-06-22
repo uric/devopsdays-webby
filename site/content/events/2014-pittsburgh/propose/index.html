@@ -1,0 +1,26 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+layout: event_pitt
+title: proposals
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+<% @eventid = File.basename(@eventhome) %>
+
+<center><b>Call for proposals is closed</b></center>
+<center><b>The program is <a href="/<%= @eventhome %>/program">announced</a>.</b></center>
+<hr>
+you can still propose an Ignite or OpenSpace session:
+<ol>
+  <li><strong><em>An Ignite talk</em></strong> that will be presented during the<a href="/pages/ignite-talks-format"> Ignite sessions</a>: these are 5 minutes slots with slides changing every 15 seconds (20 slides total) also presented to all attendees in one room</li>
+  <li><strong><em>Openspace session</em></strong> : even without a prepared presentation we welcome the discussion and interaction by having people propose a session on the fly during the openspace opening. Check the <a href="/pages/open-space-format">openspace format</a> for more information
+</ol>
+
+<strong>To propose an Ignite:</strong> Send an email to [<a href="mailto:<%= render(:partial => "/#{@eventhome}/_email_proposals") %>"><%= render(:partial => "/#{@eventhome}/_email_proposals") %></a>] with the following information
+<ol>
+	<li>your Ignite working title (can be changed later)</li>
+	<li>Description or abstract</li>
+</ol>

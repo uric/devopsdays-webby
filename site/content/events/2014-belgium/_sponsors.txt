@@ -1,0 +1,98 @@
+---
+filter:    erb
+---
+
+<% @gsponsors = [
+  { :image => "openminds.png", :name => "Openminds", :link => "http://www.openminds.be/"},
+  { :image => "bmc.png", :name => "BMC", :link => "http://www.bmc.com/devops"},
+  { :image => "schubergphilis.png", :name => "Schuberg Philis", :link => "http://www.schubergphilis.com/"},
+  { :image => "normation.png", :name => "Normation", :link => "http://www.normation.com/"},
+  { :image => "chef.png", :name => "Getchef", :link => "http://getchef.com/"},
+  { :image => "puppetlabs.png", :name => "Puppetlabs", :link => "http://puppetlabs.com/"},
+  { :image => "serena.png", :name => "Serena", :link => "http://serena.com/"},
+  { :image => "elasticsearch.png", :name => "Elasticsearch", :link => "http://www.elasticsearch.com/", :deal => 'Lanyard'},
+  { :image => "xebialabs.png", :name => "Xebialabs", :link => "http://www.xebialabs.com/"},
+  { :image => "sumologic.png", :name => "Sumologic", :link => "http://www.sumologic.com/"},
+  { :image => "ca.png", :name => "CA Technologies", :link => "http://www.ca.com/us/products/application-delivery.aspx?intcmp=headernav"},
+  { :image => "kangaroot.png", :name => "Kangaroot", :link => "http://www.kangaroot.net/"},
+  { :image => "appdynamics.png", :name => "AppDynamics", :link => "http://www.appdynamics.com/"},
+  { :image => "rackspace.png", :name => "Rackspace", :link => "http://www.rackspace.com/"},
+  { :image => "microsoft.png", :name => "Microsoft", :link => "http://www.microsoft.com/"},
+]%>
+
+
+<% if @gsponsors.empty?  %>
+
+<% end %>
+
+<% @gsponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
+
+<h1>Special sponsors</h1>
+<% @hsponsors = [
+  { :image => "chef.png", :name => "Getchef", :link => "http://www.getchef.com/", :deal => 'Happy Hour'},
+  { :image => "elasticsearch.png", :name => "Elasticsearch", :link => "http://www.elasticsearch.com/", :deal => 'Lanyard'},
+  { :image => "axelos.png", :name => "Axelos", :link => "http://www.axelos.com/", :deal => 'Barista'},
+]%>
+
+<% @hsponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img  border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
+<% @psponsors = [
+  { :image => "automic.png", :name => "Automic", :link => "http://www.automic.com/"},
+  { :image => "ibm.png", :name => "IBM", :link => "http://www.ibm.com/"},
+]%>
+
+<% unless @psponsors.empty?  %><h1>Pearl sponsors</h1><% end %>
+
+<% @psponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
+<% @ssponsors = [
+  { :image => "inuits.png", :name => "Inuits", :link => "http://www.inuits.be/"},
+  { :image => "nucleus.png", :name => "Nucleus", :link => "http://www.nucleus.be/"},
+  { :image => "super-visions.png", :name => "Super Visions", :link => "http://www.super-visions.com/"},
+  { :image => "cegeka.png", :name => "Cegeka", :link => "http://agileinthecore.net/"},
+  { :image => "thoughtworks.png", :name => "ThoughtWorks", :link => "http://www.thoughtworks.com/"},
+  { :image => "oreilly.png", :name => "O'Reilly", :link => "http://www.oreilly.com/"},
+  { :image => "cirb-cigb.png", :name => "CIRB-CIBG", :link => "http://cirb.brussels/"},
+]%>
+
+<% unless @ssponsors.empty?  %><h1>Silver sponsors</h1><% end %>
+
+<% @ssponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
+<% @bsponsors = [
+  { :image => "combell.png", :name => "Combell", :link => "http://www.combell.be/"},
+  { :image => "skyscrapers.png", :name => "Skyscrapers", :link => "http://skyscrape.rs/"},
+  { :image => "datadog.png", :name => "Datadog", :link => "http://datadoghq.com"},
+  { :image => "highops.png", :name => "HighOps", :link => "http://highops.com"},
+  { :image => "scalefactory.png", :name => "Scale Factory", :link => "http://scalefactory.com"},
+  { :image => "opsmatic.png", :name => "Opsmatic", :link => "http://opsmatic.com"},
+  { :image => "imvalues.png", :name => "imValues", :link => "http://www.imvalues.nl/"},
+  { :image => "adroll.png", :name => "adRoll", :link => "http://www.adroll.com/"},
+  { :image => "citrix.png", :name => "Open@Citrix", :link => "http://open.citrix.com/"},
+  { :image => "stattys.png", :name => "Stattys", :link => "http://www.stattys.com/"},
+]%>
+
+<% unless @bsponsors.empty?  %><h1>Bronze sponsors</h1><% end %>
+<% @bsponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
+<% @msponsors = [
+  { :image => "xpdays.png", :name => "Xp Days", :link => "http://xpdays.net"},
+  { :image => "agiletour.png", :name => "Agile Tour Brussels", :link => "http://atbru.be"},
+]%>
+<% unless @msponsors.empty?  %><h1>Media sponsors</h1><% end %>
+<% @msponsors.each do |sponsor| %>
+<a href='<%= sponsor[:link] %>'><img border=0 alt='<%= sponsor[:name] %>' title='<%= sponsor[:name] %>' width=100px height=100px src='<%= File.join('/',@eventhome,"logos/#{sponsor[:image]}")%>'></a>
+<% end %>
+
+

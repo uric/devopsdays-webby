@@ -1,0 +1,33 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: true
+talk: true
+ignite: false
+selected: false
+layout: event
+author: Yuichiro Mori, Chris Barclay and Joel Gerard
+title: "Amazon OpsWorks: It's DevOps with Chef Jim, but not as we know it"
+---
+
+**Abstract:**
+
+Amazon's OpsWorks was released in Feb 2013 quietly nestled alongside EC2, CloudFront, Cloudwatch and the many other Amazon Cloud service offerings. At it's core OpsWorks is based on Chef, although AWS's take on this bears some noteworthy differences from the OpsCode flavour you might have used.
+
+In this talk we'll:
+
+ - Highlight the key differences between OpsCode's and AWS OpsWork's Chef
+ - Show how it works in practice and how we at DeNA leveraged OpsWorks
+ - Share pros/cons of some common continuous deployment patterns observed in use by AWS OpsWorks customers
+
+**Speaker:**
+
+Yuichiro Mori - Sr Server Engineer, DeNA Vancouver
+
+Joel Gerard - DeNA Vancouver
+
+Chris Barclay - Sr Product Manager, AWS OpsWorks
+

@@ -1,0 +1,17 @@
+machine:
+  ruby:
+    version: 1.8.7-p374
+dependencies:
+  pre:
+    - sudo apt-get install libonig-dev
+    # Necessary for s3cmd 1.5.0-rc1
+    - sudo apt-get install python-dateutil
+test:
+  override:
+    - cd site ; bundle exec webby rebuild
+deployment:
+  release:
+    branch: master
+    commands:
+      - scripts-ci/s3_upload.sh
+      - scripts-ci/fastly_purge.sh

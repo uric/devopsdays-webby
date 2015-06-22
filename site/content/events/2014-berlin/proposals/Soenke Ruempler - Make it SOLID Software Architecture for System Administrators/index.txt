@@ -1,0 +1,32 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: true
+talk: true
+selected: false
+layout: event
+author: Soenke Ruempler
+title: "Make it SOLID. Software Architecture for System Administrators"
+---
+
+**Abstract**
+
+Starting with Chef or Puppet as a System Administrator will lead you to
+a problem where you are not sure what's the best solution of a problem
+in terms of software architecture. I will give you a brief overview of
+general well known and battle tested software patterns, which also
+applies to infrastructure management code. In addition, we'll also show
+Antipatterns, and best practices.
+
+**Speaker**
+
+Soenke Ruempler is “Chief Trolling Officer” at Jimdo, an online website
+creation tool. Besides taking care of a good trolling culture he feels
+responsible for strategic technical decisions, reducing technical debt
+and advocating agile methods. After finishing his diploma thesis - which
+is about knowledge management in agile software development - he’s even
+more interested in social and cultural issues and how they play together
+with technical topics.

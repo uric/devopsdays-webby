@@ -9,6 +9,7 @@ It uses webby as a framework:
 
 ### On RedHat/CentOS/Fedora:
 `$ yum install oniguruma oniguruma-devel`
+`$ yum install libxslt libxml2 libxslt-devel libxlm2-devel`
 
 ### On Debian/Ubuntu:
 `$ apt-get install libonig-dev`
@@ -16,10 +17,28 @@ It uses webby as a framework:
 ### On Macosx
 `$ brew install oniguruma`
 
+### On Windows
+See [README-Windows](README-Windows.md) for using webby on Windows operating systems
+
+
 ## If you use RVM
 
-- there is an .rvmrc that select ruby-1.8.7
-- and creates a new gemset devopsdays-webby
+- there is a .ruby-version file that selects "ruby-1.8.7"
+- and a .ruby-gemset file creates a new gemset "devopsdays-webby"
+
+## If you use rbenv + OSX 10.8+
+
+- Install Xcode 4.4+
+- Install developer tools (Xcode preferences > Additional downloads)
+- Install gcc-42 with [hombrew/dupes](https://github.com/Homebrew/homebrew-dupes/)
+- Install [XQuartz](http://xquartz.macosforge.org/)
+
+### Install Ruby
+
+     $ brew install https://raw.github.com/Homebrew/homebrew-dupes/master/apple-gcc42.rb
+     $ brew install rbenv
+     $ brew install ruby-build
+     $ CONFIGURE_OPTS=--without-tk rbenv install 1.8.7-p370
 
 ### Get the source
 
@@ -39,18 +58,29 @@ It uses webby as a framework:
 
 ## If you don't have RVM installed
 
-    $ . devopsdays-webby.ENV
+    $ source devopsdays-webby.ENV
     $ gem install bundler
     $ bundle install
 
 # Using it
 All interactions are done with the webby command, for this you need to be inside the 'site' directory
-`$ cd site`
 
 
-    webby autobuild          # Continuously build the website
-    webby build              # Build the website
-    webby rebuild            # Build the website
+### Continuously build the website
+
+     $ cd site
+     $ webby autobuild
+
+### Build the website
+
+     $ cd site
+     $ webby build
+
+### rebuild the website
+
+     $ cd site
+     $ webby rebuild
 
 For more information on how to use webby
 [http://webby.rubyforge.org/](http://webby.rubyforge.org/)
+

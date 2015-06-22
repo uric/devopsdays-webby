@@ -387,6 +387,11 @@ div#quicklinks li {
 
 div#headermenu {
 	font-color: #1581AB;
+	width: 300px;
+}
+
+div#headermenu td {
+	text-align: center;
 }
 
 div#headermenu * a {
@@ -397,6 +402,7 @@ div#headermenu * a {
 
 .submenu h3 {
 	font-weight: bold;
+  text-align:center;
 	background-color: #D7D7D7;
 	padding: 10px;
 }

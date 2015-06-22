@@ -1,0 +1,34 @@
+---
+extension: html
+layout: event_pitt
+filter:
+- erb
+- markdown
+title: welcome
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+
+# devopsdays Pittsburgh n'at!
+
+When: <%= render(:partial => "/#{@eventhome}/_target_date") %>
+
+Where: [University of Pittsburgh](location)
+
+We are proud to put on [this program](program).
+
+The [call for proposals](propose) is open until <%= render(:partial => "/#{@eventhome}/_cfp_date_end") %>.
+You can alternatively [propose an Ignite](propose).
+
+It is never too early to get excited about [open spaces](http://devopsdays.org/pages/open-space-format/).
+
+We have a [code of conduct](conduct).
+
+## [Register Now](registration)
+
+and don't forget to plan your [travel](travel).
+
+see you soon!
+<hr>
+
+<img border=0 width="500px" height="500px" src="warholdevops.png"><br>

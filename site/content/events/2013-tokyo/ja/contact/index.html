@@ -3,9 +3,10 @@ extension: html
 filter:
 - erb
 - markdown
-title: contact
+title: 問い合わせ
 dirty: true
-layout: event
+bento: true
+layout: event_tokyo
 ---
 <% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %> 
 <% @eventid = File.basename(@page.directory) %>

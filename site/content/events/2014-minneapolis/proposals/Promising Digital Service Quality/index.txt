@@ -1,0 +1,34 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: true
+talk: true
+selected: true
+layout: event_msp
+author: Jeff Sussna
+title: "Promising Digital Service Quality"
+---
+
+**Description:**
+
+Promise Theory is a formal model for describing complex distributed systems. It can also be used to describe socio-technical systems such as DevOps or even entire digital service organizations. This session will demonstrate Promise Theory's ability to improve service quality by helping us increase empathy and better understand certainty and uncertainty in the systems we manage.  
+
+**Abstract:**
+
+Promise Theory is a powerful formal model conceived by Mark Burgess to describe the relationships that drive complex distributed systems. It forms the conceptual basis for CFEngine; it can also, though, be used to describe socio-technical systems such as DevOps or even entire digital service organizations. Promise Theory offers a language for thinking about service relationships within and between systems, people, and organizations. This language can help us improve service quality by increasing empathy between organizations and people, and by better understanding the relationships between continuity and discontinuity in the systems we manage.             
+
+This session will introduce Promise Theory as a methodology that can help us deliver continuous service quality in environments characterized by complexity, uncertainty, and change. The session will start with a brief introduction to the topic. The introduction will focus on explaining what Promise Theory is and how it works, without delving into the underlying mathematical formalisms. The session will then present specific DevOps and digital service scenarios. It will explain how these scenarios can benefit from Promise Theory, and provide concrete examples that illustrate the power of Promise Theory in action. 
+
+                    
+**Speaker:**
+Jeff Sussna
+
+**Slides:**
+<iframe src="//www.slideshare.net/slideshow/embed_code/37129748" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/ingineeringit/promising-digital-service-quality" title="Promising Digital Service Quality" target="_blank">Promising Digital Service Quality</a> </strong> from <strong><a href="http://www.slideshare.net/ingineeringit" target="_blank">Jeff Sussna</a></strong> </div>
+
+**Video:**
+
+<iframe src="//player.vimeo.com/video/101735252" width="500" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/101735252">DevOpsDays Minneapolis 2014 -- Jeff Sussna, Promising Digital Service Quality</a> from <a href="http://vimeo.com/devopsdays">devopsdays</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

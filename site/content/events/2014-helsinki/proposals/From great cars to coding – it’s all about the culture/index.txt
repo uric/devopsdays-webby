@@ -1,0 +1,33 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: false
+talk_day1: true
+talk_day2: false
+ignite: false
+suggestion: false
+selected: true
+layout: event_helsinki
+author: Julius Manni
+title: From great cars to coding – it’s all about the culture
+---
+- How 50 year old management practices are re-invented as modern software development is facing the same revolution as car manufacturing in 1950’s
+
+- What does Top Management Commitment really mean?
+
+- Empowering the knowledge worker
+
+- Bad Cop vs. Good Cop management
+
+- Agile culture characteristics
+
+- The Quiet crisis of IT (not meeting the digital opportunities & threats)
+
+- Leading Business enabling IT vs. Business supporting IT
+
+- Case Waypoint @ If (also DevOps will be mentioned…)
+
+Julius Manni is Vice President in IT at If P&C Insurance. He is passionate about driving for the strategic fusion of technology and business, and has proven track record in implementing agile business development culture in large scale inside "established" corporate structures. Before joining If in 2008, he worked in the IT Strategy practice of Accenture. If all else fails, as a personal insurance strategy Julius keeps a 'Plan-B' up his sleeve to become a full-time street musician.

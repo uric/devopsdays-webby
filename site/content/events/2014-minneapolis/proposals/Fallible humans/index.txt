@@ -1,0 +1,32 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: true
+talk: true
+selected: true
+layout: event_msp
+author: Ian Malpass
+title: "Fallible humans: dealing with failure in the absence of scapegoats"
+---
+
+**Abstract:**
+
+Functional siloing - "dev", "ops", etc. - make it easier to pass the buck and blame others when things go wrong. In an environment where dev, ops, and other business functions co-operate and work together, it's not so easy to fall back on traditional scapegoats. DevOps approaches encourage us to move away from the harmful (and counterproductive) apportioning of blame for failure, but it takes effort and commitment from all involved. 
+                                                                                
+I'll discuss the philosophy and motivations of "blamelessness", along with ways to understand the vital role humans play in making complex socio-technical systems safe, even when things go awry, along with advice on how to promote and foster a blameless culture in your workplace, and techniques for analyzing  and learning from failures without resorting to finger-pointing and scapegoating. 
+
+**Speaker:**
+Ian Malpass
+
+**Slides:**
+
+<a href="http://www.indecorous.com/fallible_humans/">Transcript of slides</a>
+<br />
+<script async class="speakerdeck-embed" data-id="5ccab6b0f1fe0131e17626e0503a2608" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+
+**Video:**
+
+<iframe src="//player.vimeo.com/video/101739317" width="500" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/101739317">DevOpsDays Minneapolis 2014 -- Ian Malpass, Fallible humans</a> from <a href="http://vimeo.com/devopsdays">devopsdays</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

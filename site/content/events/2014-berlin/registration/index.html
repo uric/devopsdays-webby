@@ -1,0 +1,16 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+layout: event
+title: Registration
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+<% @eventid = File.basename(@eventhome) %>
+
+<iframe sandbox="allow-forms" name="register-berlin" src="http://devopsdays-berlin.herokuapp.com/form" frameborder="0" width="600" height="2100">
+    Your browser does not support iframes.
+</iframe>
+

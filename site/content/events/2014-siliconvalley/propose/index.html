@@ -1,0 +1,13 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+layout: event
+title: proposals
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+<% @eventid = File.basename(@eventhome) %>
+
+<center><b>Call for proposals was <b>CLOSED</b> 16th of May</b></center>

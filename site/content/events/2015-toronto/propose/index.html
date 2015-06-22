@@ -1,0 +1,42 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+layout: event
+title: Propose
+dirty: true
+platinum: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+<% @eventid = File.basename(@eventhome) %>
+
+## Equal Opportunity
+
+DevOpsDays Toronto is committed to creating a diverse environment and is proud to invite people of all backgrounds and profiles to submit presentation proposals. All potential speakers will receive consideration without regard to race, colour, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, ability or age.
+
+For more information, please see our published <a href="../conduct/index.html">Code of Conduct</a>.
+
+## Closing Date
+Call for proposals is now closed. Selected speakers will be notified on <%= render(:partial => "/#{@eventhome}/_cfp_date_announce") %>.
+
+## Submissions
+
+We've had some amazing submissions this year. Please [check them out](../proposals/).
+
+## Types of Proposals
+
+### Session Talks
+30 minute slots that will have the full attention of all attendees, as everybody will be in the main presentation room together. Travel and accomodation support is available for selected speakers,
+
+### Ignite Talks
+These are 5 minutes slots with slides changing every 15 seconds (20 slides total) which are also presented to all attendees in main presentation room. Good examples can be found at <a href="http://igniteshow.com/">http://igniteshow.com/</a>.
+
+### Open Spaces
+There will also be Open Spaces allowing for additional conversations to take place. Those topics will be suggested and selected just prior to Open Spaces on the day of the event. Please check the <a href="/pages/open-space-format">openspace format</a> for more information.
+
+Take a look at the <a href="http://vimeo.com/album/3123830" target="_blank">videos</a> from DevOpsDays Toronto 2014 to see how the different formats work.
+
+
+
+

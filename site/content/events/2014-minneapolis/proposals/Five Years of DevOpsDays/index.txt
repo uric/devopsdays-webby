@@ -1,0 +1,29 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: false
+talk: true
+selected: true
+layout: event_msp
+author: Patrick Debois
+title: "Five Years of DevOpsDays"
+---
+
+**Abstract:**
+
+Patrick Debois' closing keynote will give perspective on where DevOps and DevOpsDays started and insights into the future.
+
+
+**Speaker:**
+Patrick Debois
+
+**Slides:**
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/37134117" width="427" height="356" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px 1px 0; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="https://www.slideshare.net/jedi4ever/5-years-of-devops-in-search-of-in-sanity" title="5 years of devops - in search of (in) sanity" target="_blank">5 years of devops - in search of (in) sanity</a> </strong> from <strong><a href="http://www.slideshare.net/jedi4ever" target="_blank">Patrick Debois</a></strong> </div>
+
+**Video:**
+
+<iframe src="//player.vimeo.com/video/101739318" width="500" height="338" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/101739318">DevOpsDays Minneapolis 2014 -- Patrick Debois, Five Years of DevOpsDays</a> from <a href="http://vimeo.com/devopsdays">devopsdays</a> on <a href="https://vimeo.com">Vimeo</a>.</p>

@@ -1,0 +1,61 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+layout: event
+title: Proposals
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+<% @eventid = File.basename(@eventhome) %>
+
+<center>
+	<h2>The call for proposals is now closed!</h2>
+</center>
+<br>
+
+<hr>
+There are three ways to propose a session:
+<ol>
+  <li><strong><em>A proposal for a talk or panel</em></strong> during the conference part: these are thirty-minute slots that will have everyone's full attention as just about every attendee will be in the room.</li>
+  <li><strong><em>An Ignite talk</em></strong> that will be presented during the<a href="/pages/ignite-talks-format"> Ignite sessions</a>: these are five minute slots with slides changing every 15 seconds for a total of 20 slides. Also presented to all attendees in the room</li>
+  <li><strong><em>OpenSpace session</em></strong>: even without a prepared presentation we welcome discussions and interaction by having people propose a session on the fly during the OpenSpace opening. Check the <a href="/pages/open-space-format">OpenSpace format</a> for more information.
+</ol>
+
+### Even if you don't propose, please consider [commenting on proposals submitted by others](../proposals/)
+
+Our main criteria to make it to the top selection are:
+
+- _original content_: content not yet presented at other conferences, or a new angle to an existing problem
+- _new presenters_: people who are new to the space and have insightful stuff to tell, we want to hear everbody's voice
+- _no vendor pitches_: as much as we value vendors and sponsors, we just don't think this is the right forum. We do, however, provide one-minute pitches for gold sponsors to showcase their products.
+
+<strong>Some suggestions to get you thinking:</strong>
+<ul>
+	<li>What is the role of QA / testers in DevOps</li>
+	<li>How do we integrate QA in the continuous delivery process</li>
+	<li>The impact DevOps has on traditional security/auditing/change control</li>
+	<li>How does devops co-exist with ITIL, Cobit</li>
+	<li>What about configuration management and delivery in Mixed Unix AND Windows environments</li>
+  	<li>Building dashboards because #monitoringsucks</li>
+	<li>The impact of devops on HR policies, and the hiring process</li>
+	<li>Help prove that devops can scale beyond the 5-8 person web startups, we love traditional IT enterprise cases</li>
+	<li>With all the automation, data is still a hard thing to handle, how does it affect, DBA's, backup strategies, ...</li>
+	<li>How to involve the business in devops</li>
+	<li>How to get YOUR boss involved, how do you make the business case</li>
+	<li>And of course any other topic in the realm of Devops</li>
+	<li>Beyond Configuration Management, about challenges like orchestration, or doing things at large scale</li>
+</ul>
+
+<strong>How to make a proposal:</strong>
+
+At this point, the call for proposals is closed.
+
+<strong>Rules:</strong>
+<ul>
+	<li>Be specific - we aren't mind readers. About twenty lines is the sweet spot here.</li>
+	<li>Detail is good... but not as important as explaining why your proposal would be interesting</li>
+	<li>Nominations welcome... if you know someone who has content or experience relevant to the DevOps conversation, please point us in their direction!</li>
+	<li>Multiple proposals welcome... just follow the other rules</li>
+</ul>

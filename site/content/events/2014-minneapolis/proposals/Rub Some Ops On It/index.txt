@@ -1,0 +1,31 @@
+---
+extension: html
+filter:
+- erb
+- markdown
+dirty: true
+proposal: true
+ignite: true
+selected: true
+layout: event_msp
+author: Andy Fleener
+title: "Rub Some Ops On It"
+---
+
+**Description**
+Leveling up your development skills with some lessons learned from operations.  
+
+**Abstract:**
+
+Building software is hard. Building maintainable quality software is incredibly hard. You know what else is hard? Running software. Operations has learned quite a bit from the development side of the house, a solid Ops person understands the basic principles of software development. But the reverse should also be true for developers. Coming from the perspective of someone who's done both, operations gives you an interesting view on how to run and ship software. Operations forces you to become an expert in recovering from failure. How to debug a problem when the only data you have are symptoms of that problem. It's a constant loop of continuous improvements to prevent the same problem from happening again. It's risk assessment, if something is a high risk how can you reduce that risk and still accomplish the desired goal? Operations requires understanding the impact of a change to your system, it could be the difference in shipping the nastiest hidden regression your software has ever seen versus shipping the new hotness feature that becomes it's number one selling point. But the most important thing developers can learn from operations is that everyone has the same goal, to ship and run maintainable quality software for your customers. 
+
+**Speaker:**
+Andy Fleener
+
+**Slides:**
+
+<script async class="speakerdeck-embed" data-id="7f3ed2d0f1c50131e17626e0503a2608" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
+
+**Video:**
+
+<iframe width="420" height="315" src="//www.youtube.com/embed/yJR3llvIUfc?start=691&end=983" frameborder="0" allowfullscreen></iframe>

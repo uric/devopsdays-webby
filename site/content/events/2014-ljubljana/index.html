@@ -1,0 +1,51 @@
+---
+extension: html
+layout: event
+filter:
+- erb
+- markdown
+title: welcome
+dirty: true
+---
+<% @eventhome = @page.directory.split(File::SEPARATOR)[0..1].join(File::SEPARATOR) %>
+
+![Ljubljana](/<%= @eventhome -%>/images/lj.jpg)
+
+##<%= render(:partial => "/#{@eventhome}/_target_date") -%>
+
+The first DevopsDays in Ljubljana has been a great event. We will see you all next year!
+
+Below you can watch the presentations from the two days. Once we've processed the footage, we will publish the processed videos.
+
+We would like to thank [V ŽIVO](http://www.vzivo.si/) who have done a tremendous job helping us
+record in history this first event.
+
+## Day 1
+Talks:
+
+* Andrew Clay Shafer - What Devops means to me 
+* Tomaz Zaman - Continuous deployment of single page applications
+* Jose Roca - Scaling a moving target: Making your CI scale and test your CI infrastructure
+* Jure Koren - Next Generation File Systems 
+* Avishai Ish-Shalom - WebOps' disaster survival guide 
+
+<iframe src="http://new.livestream.com/accounts/564247/events/2890324/videos/47052778/player?autoPlay=false&height=332&mute=false&width=590" width="590" height="332" frameborder="0" scrolling="no"></iframe>
+
+## Day 2
+Talks:
+
+* Marko Čelan - Monitoring ecosystem at Zemanta
+* Karoly Kamaras - Continuous delivery for desktop applications - Release from the pub 
+* Andrey Adamovich - Groovy DevOps in the Cloud
+* Alon Becker - Anatomy of a Deployment Pipeline in a Hybrid (Windows/Linux) Environment
+* Diego Garber - Continuous Delivery in One year project
+
+<iframe src="http://new.livestream.com/accounts/564247/events/2890324/videos/47143236/player?autoPlay=false&height=332&mute=false&width=590" width="590" height="332" frameborder="0" scrolling="no"></iframe>
+
+## Ignites
+
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+
+<div class="g-post" data-href="https://plus.google.com/116232259907576669477/posts/Jvr6R2MTsrQ"></div>
+<div class="g-post" data-href="https://plus.google.com/116232259907576669477/posts/MxeN9e1hnxL"></div>
+

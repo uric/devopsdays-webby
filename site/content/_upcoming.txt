@@ -1,9 +1,47 @@
 <div class="submenu" style="width:550px">
   <h3>
-    <a href="/events/2013-downunder/">Downunder</a> -
-    <a href="/events/2013-tokyo/">Tokyo</a> -
-    <a href="/events/2013-telaviv/">Tel Aviv</a> -
-    <a href="/events/2013-atlanta/">Atlanta</a> -
-    <a href="/events/2013-newyork/">New York</a>
+    <a href="/events/2015-amsterdam">
+      Amsterdam
+    </a>
+    -
+    <a href="/events/2015-minneapolis">
+      Minneapolis
+    </a>
+    -
+    <a href="/events/2015-melbourne">
+      Melbourne
+    </a>
+    -
+    <a href="/events/2015-pittsburgh/">
+      Pittsburgh
+    </a>
+    <br>
+    <a href="/events/2015-chicago/">
+      Chicago
+    </a>
+    -
+    <a href="/events/2015-perth">
+      Perth
+    </a>
+    -
+    <a href="/events/2015-bangalore">
+      Bangalore
+    </a>
+    -
+    <a href="/events/2015-boston">
+      Boston
+    </a>
+    -
+    <a href="/events/2015-berlin">
+      Berlin
+    </a>
+    -
+    <a href="/events/2015-telaviv">
+      Tel Aviv 
+    </a>
+    -
+    <a href="/events/2015-siliconvalley">
+      Silicon Valley
+    </a>
   </h3>
 </div>
